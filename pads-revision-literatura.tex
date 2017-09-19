@@ -429,13 +429,13 @@ Cartago, Costa Rica\\
 % in the abstract or keywords.
 \IEEEtitleabstractindextext{%
 \begin{abstract}
-Aquí va el resumen
+A pesar de la popularidad de las metodologías ágiles de desarrollo de software en la industria, expresada en varias encuestas y estudios recientes, muchas organizaciones siguen reportando en estas mismas encuestas que se cuenta con poco personal capacitado con las habilidades necesarias y que los planes de estudio de carreras de tecnología de información abarcan poco de estos temas. Con el fin de brindar una formación que no solamente incluya la enseñanza de prácticas ágiles sino también el desarrollo de otras actitudes como el empredurismo, las universidades han venido introduciendo paulativamente estas prácticas a sus planes de estudio principalmente por medio de enfoques de aprender-haciendo. Universidades en Costa Rica también han reportado la inclusión de estos temas en sus planes de estudio como respuesta a las tendencias mundiales y para apoyar la creciente industria de desarrollo de software del país. Este artículo presenta una revisión de literatura en sobre la aplicación de prácticas ágiles de desarrollo de software en las universidades.
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
 \renewcommand\IEEEkeywordsname{Palabras Clave}
 \begin{IEEEkeywords}
-IEEEtran, journal, \LaTeX, magnetics, paper, template.
+agile software development, agile teaching, agile engieering practices, software engineering education
 \end{IEEEkeywords}}
 
 
@@ -495,10 +495,27 @@ IEEEtran, journal, \LaTeX, magnetics, paper, template.
     \item Metodologías ágiles: a menudo se llama ``livianas''. Esta categoría incluye \emph{eXtreme Programming} (XP) y \emph{Scrum}.
 \end{enumerate}
 
-El movimiento de desarrollo ágil de software nace como una alternativa a los métodos tradicionales con los que se hace software, en los cuales los ciclos de desarrollo y entrega tienden a ser muy  prolongados. El desarrollo ágil de software se define en el Manifiesto Ágil \cite{agile-manifesto} como un conjunto de doce principios.
+El movimiento de desarrollo ágil de software nace como una alternativa a los métodos tradicionales con los que se hace software, en los cuales los ciclos de desarrollo y entrega tienden a ser muy  prolongados. El desarrollo ágil de software se define en el Manifiesto Ágil \cite{agile-manifesto} como un conjunto de doce principios. 
+
+Reportes sobre el uso de metodologías ágiles en desarrollo de software muestran un sostenido crecimiento a través de los años\cite{version-one} así como la literatura de investigación con respecto al impacto de estos enfoques en varios aspectos del software como lo puede ser la calidad, la entrega, gestión de requerimientos, entre otros. 
+
+Otra práctica que ha resultado tener gran impacto en el sector del desarrollo de software en los años muy reciente es DevOps. Esta práctica promueve retomar viejos paradigmas de trabajo en donde el ingeniero/programador/investigador, estaba a cargo de todo el proceso de desarrollo: desde el diseño y la programación hasta la generación de pruebas, artefactos de software e instalación final. DevOps ha ganado mucho terreno gracias a la computación en la nube en donde en lugar de estar a cargo de recursos físicos, se está a cargo de recursos virtuales por lo que los roles del programador que solo programa, el ingeniero de pruebas que solo prueba software y finalmente el administrador de servidores que solamente se dedica a configurar hardware, se motivan a ser re-pensados. En ambientes como el de la computación en la nube, la infraestrutura está en el código lo que hace que al trabajar con este tipo de aplicaciones se tiene que estar conciente de muchas más cosas. De esta forma se puede decir que DevOps es la combinación entre desarrollo y operaciones. 
+
+A pesar de ser un enfoque de desarrollo aún más reciente las metodologías de desarrollo ágil, DevOps ha sido influenciado por muchos de los principios de estas, principalmente del \emph{eXtreme Programming}. DevOps es visto por muchos como una extensión natural de las prácticas ágiles\cite{henrik-b} y actualmente se puede encontrar mucha literatura disponible sobre la aplicación de metodologías ágiles junto con DevOps.
+
+Sin embargo la rápida penetración y auge de estas prácticas viene con un precio. En los primeros años de adopción de las metodologías ágiles era muy difícil encontrar personal con las habilidades necesarias, esto forzaba tanto a empleados como a empleadores a buscar formas alternas de formación. Por otro lado, los graduados de carreras de tecnologías de información del momento tampoco contaban con tales conocimiento debido a que los planes de estudio abarcaban poco o nada de estas prácticas. En los círculos académicos no había mucho interés en desarrollar estos temas debido a que se consideraba que desarrollo ágil no tenía bases teóricas sino que más bien ha sido desarrollada a partir de la práctica y la experiencia\cite{hazzan-dubinsky}. Esto ha venido cambiando de forma substancial y temas sobre metodologías ágiles se han incorporado a los planes de estudio de carreras de tecnologías de la información de formas diversas. Aún se acusan muchos retos asociados a la enseñanza de estas prácticas, tal y como se indica en la sección \ref{sec:retos}.
+
+Con el paso de los años se ha constatado que estas prácticas han dejado de ser una moda o una tendencia del momento y que paralelo a fomentar mejoras en aspectos propios de ingeniería, también promueven el trabajo en equipo y colaborativo, habilidades de gestión, normas éticas y emprendedurismo \cite{hazzan-dubinsky, hickey-salas}. 
+
+Para apoyar la mejora de habilidades técnicas y la inserción laboral varios enfoques se enseñanza de ingeniería de software utilizando prácticas ágiles han sido reportados, \cite{ding-yousef-yue, steghoger-et-al, scharlau, schroeder-et-al, cubric, haaranen-lehtinen, kropp-meier-2}. Estas iniciativas persiguen exponer a los estudiantes a ambientes más reales de trabajo y a la mejora de sus habilidades en desarrollo de software. Cobra aún mayor importancia la exposición de estos temas en la universidad si se toma en cuenta el gran auge de la computación en la nube. Baker \cite{advance-it} señala que \emph{``Los estudiantes de hoy en día puede ser que nunca se enfrenten a un servidor físico, un switch de red o un dispositivo de almacenamiento durante su carrera profesional futura pero aún así van a estar construyendo más infraestructura de IT que todos sus predecesores combinados. Se necesita enseñar a los estudiantes en cómo crear infraestructuas usando códido y cómo trabajar juntos de forma colaborativa para gestionar aplicaciones distribuidas complejas''}. 
 
 
-\section{Estrategia}
+En Costa Rica, la industria de desarrollo de software ha tenido un gran crecimiento en los últimos 20 años \cite{cenfotec-2, prosic}. A pesar del crecimiento, las organizaciones reportan deficiencias la formación de la fuerza laboral y planes de estudio que son están actualizados con las necesidades del sector \cite{prosic}. Con respecto a la enseñanza de prácticas ágiles, las iniciativas en \cite{trejos-1, salazar, mora-et-al-1, mora-et-al-2} dan a conocer enfoques en cómo se están introduciendo a los estudiantes en estos temas. Se destacan los enfoques de enseñanza orientados a resolución de problemas y proyectos.
+
+Esta revisión de lectura está organizada de la siguiente forma: la Sección \ref{sec:estrategia} presenta la estrategia de revisión de lectura utilizada. La Sección \ref{sec:desarrollo-agil} introduce a conceptos de desarrollo ágil de software así como a las prácticas de desarrollo de mayor aceptación. La Sección \ref{sec:ensenanza} recoge evidencia sobre la experiencia en la enseñanza de prácticas ágiles de desarrollo, la Sección \ref{sec:costa-rica} da a conocer esta misma experiencia para Costa Rica. 
+
+
+\section{Estrategia} \label{sec:estrategia}
 % Revisar la parte de cubrir el cuerpo de conocimiento relacionado con enseñanza de prácticas ágiles de desarrollo de software en las universidades
 Esta sección presenta la estrategia emprendida para cubrir el cuerpo de conocimiento relacionado con enseñanza de prácticas ágiles de desarrollo de software en universidades. La estrategia general se basó en un proceso iterativo de identificación y lectura de artículos, luego identificar y leer artículos relevantes a partir de referencias y citas bibliográficas.
 
@@ -512,7 +529,7 @@ Las preguntas de investigación seleccionadas para conducir la revisión de la l
 \end{enumerate}
 
 \subsection{Estrategia de búsqueda}
-Con el fin de identificar el primer conjunto de artículos relevantes, se hizo una revisión preliminar con Google Scholar\footnote{\url{http://scholar.google.com}} porque con este motor de búsqueda se puede abarcar una amplio número de artículos y actas académicas de diferentes fuentes. El criterio de búsqueda se basó en búsquedas de palabras derivadas del tema de investigación y las preguntas de investigación. Se incluyeron palabras como ``agile development'', ``agile engineering practices'', ``agile teaching'', ``devops education'', ``computer science education'' y``software engineering education''. 
+Con el fin de identificar el primer conjunto de artículos relevantes, se hizo una revisión preliminar con Google Scholar\footnote{\url{http://scholar.google.com}} porque con este motor de búsqueda se puede abarcar una amplio número de artículos y actas académicas de diferentes fuentes. El criterio de búsqueda se basó en búsquedas de palabras derivadas del tema de investigación y las preguntas de investigación. Se incluyeron palabras como ``agile development'', ``agile engineering practices'', ``agile teaching'', ``devops education'', ``computer science education'' y ``software engineering education''. 
 
 La búsqueda de la literatura se realizó en Setiembre del 2017 usando las siguientes bases de datos electrónicas:
 \begin{itemize}
@@ -547,7 +564,7 @@ Luego de obtener los artículos, literatura y recursos relevantes, se identific�
 
 %¿Cuál es el nivel de penetración de prácticas ágiles de desarrollo de software en los planes de estudio de carreras en tecnología de la información (TIC's) en Costa Rica y qué factores propician o limitan esto?
 
-\section{Desarrollo Ágil de Software}
+\section{Desarrollo Ágil de Software} \label{sec:desarrollo-agil}
 Las metodologías de desarrollo ágil de software emergen al final de los de la década de los noventa. El término ``ágil'' se utiliza para agrupar una serie de métodos tales como \emph{Scrum}, \emph{eXtreme Programming}, Crystal, \emph{Feature Driven Development} (FDD), \emph{Dynamic Software Development Method} (DSDM) y \emph{Adaptative Software Development}\cite{rashina-et-al}. Las metodologías ágiles se caracterizan por promover el desarrollo interativo e incremental y la entrega frecuente de funcionalidad prioritaria para los clientes. Estas metodologías estan dirigidas a equipos pequeños y altamente colaborativos. \emph{Scrum} y XP son las metodologías que presentan mayores niveles de adopción\cite{version-one}: XP se centra en prácticas de desarrollo mientras que \emph{Scrum} cubre principalmente la administración del proyecto.
 
 Las metodologías ágiles son adecuadas para proyectos con requerimientos altamente cambiantes, se motiva aceptar y responder ante los cambios. En 2001, los desarrolladores de varios de estas metodologías ágiles escribieron el Manifiesto Ágil \cite{agile-manifesto} (Apéndice \ref{apendice:a}). Los principios detrás del Manifiesto Ágil incluyen entrega rápida, frecuente consistente y continua de software funcional, respuesta a requerimientos cambiantes, comunicación efectiva y equipos motivados con capacidad de auto organizarse.
@@ -600,7 +617,7 @@ De acuerdo con \cite{jabbari-et-al}, las principales prácticas en desarrollo de
 La guía en \cite{wiggins} es un ejemplo de la aplicación de las prácticas de DevOps identificadas en \cite{jabbari-et-al} adaptadas para desarrollo de aplicaciones de tipo \emph{software como servicio} o SAAS\footnote{\emph{Software-as-a-service}} por sus siglas en inglés.
 
 
-\section{Enseñanza de Prácticas Ágiles de Desarrollo de Software}
+\section{Enseñanza de Prácticas Ágiles de Desarrollo de Software} \label{sec:ensenanza}
 De acuerdo con los resultados obtenidos a partir la búsqueda en la sección \ref{sec:resultado-rev-lit}, se evidencia que la enseñanza de prácticas ágiles de desarrollo es un tema activo de investigación y desarrollo en universidades extranjeras. En \cite{kropp-meier-1} se señala que a pesar que el desarrollo de software ágil ha existido por más de una década, incluso antes del Manifiesto Ágil, la enseñanza de desarrollo de software ágil sólo ha llamado la atención en conferencias educativas y de investigación en años recientes. Una razón para esto puede ser que el desarrollo ágil no tiene bases teóricas sino que más bien ha sido desarrollada a partir de la práctica. En \cite{hazzan-dubinsky} se discute las razones por las cuáles los programas de ingeniería de software deberían de enseñar desarrollo ágil de software. Enfatizan que los ingenieros de software no solamente necesitan ejercitar habilidades técnicas sino también sociales y éticas, que son la aspectos básicos del desarrollo ágil.
 
 
@@ -619,7 +636,7 @@ En la guía curricular recomendada para los programas de bachillerato para la ca
 
 Los autores de \cite{betz-et-al} junto con un grupo de trabajo formado por investigadores de universidades del estado de Minnesota en Estados Unidos, proponen un plan de estudios para carreras de sistemas de información y de tecnologías de la información que puede responder a las tendencias de desarrollo ágil y DevOps \cite{advance-it}. La propuesta que presentan fue la que se pudo identificar como la más radical hacia en la enseñanza y aprendizaje de prácticas ágiles de desarrollo.
 
-\section{Enseñanza de Prácticas Ágiles en Costa Rica}
+\section{Enseñanza de Prácticas Ágiles en Costa Rica} \label{sec:costa-rica}
 La evidencia recolectada apunta a que los primeras iniciativas dirigidas a la introducción y enseñanza de prácticas ágiles en las universidades de Costa Rica se dio a inicios del 2000. El siguiente fragmento tomado de \cite{cenfotec-2} reseña muy bien la situación de ese momento y da a conocer el porqué las universidades en Costa Rica empezaron a revisar sus planes de estudio para que fueran más acordes con la tendencias de la industria: \emph{A fines de la década de 1990, la demanda de profesionales y técnicos en Informática tenía un crecimiento cercano al 90\% interanual Norteamérica, Europa Occidental y Japón. En Costa Rica, la industria costarricense de software crecía, en personal, entre un 40\% y 60\% anualmente, gracias a su éxito en mercados internacionales. La sostenibilidad de esa industria radica no en su costo, sino en la calidad de sus productos, la cual depende fundamentalmente del talento humano y de los sistemas de trabajo (procesos) aplicados. El cambio en la tecnología de software y el aumento en la demanda de aplicaciones informáticas – particularmente para la Web y los dispositivos móviles – han exigido innovaciones en la forma de educar profesionales en desarrollo de software preparados para producir aplicaciones y componentes de software de calidad mundial. Además, desde el año 2003, Costa Rica participa como proveedor de servicios tecnológicos y empresariales habilitados por tecnologías digitales. Esto ha planteado la necesidad de preparar profesionales con perfiles distintos de los que se graduaban de las universidades costarricenses.}
 
 En sus inicios, la hoy Universidad Cenfotec \cite{cenfotec-1} presentó un plan de estudios para el programa de Especialista en Tecnología de Software, el cual se diferenciaba de los carreras universitarias convenciales al sacrificar la generalidad en aras de la especialidad y permitir al graduado incorporarse al mercado laboral para realizar desarrollo de software de alta calidad. La intención detrás de este programa era ejercitar de forma intensiva planificación, diseño y programación de software a partir de la ejecución de proyectos y del enfoque de aprender-haciendo.
@@ -651,8 +668,10 @@ La Universidad de Costa Rica ha reportado la introducción de \emph{Scrum} y pro
     \end{itemize}
 \end{itemize}
 
-\subsection{Retos}
+\subsection{Retos} \label{sec:retos}
 \begin{itemize}
+
+    \item Las instituciones educativas son lentas en crear e innovar en los planes de estudio para preparar a la futura fuerza laborar y desarrollar programas para re-entrenar aquellos que se ya se encuentran trabajando \cite{cenfotec-2}
     \item Existen muy pocos artículos publicados acerca de la enseñanza de DevOps\cite{henrik-b}
     \item En \cite{steghoger-et-al} se cita:
         \begin{itemize}
@@ -683,7 +702,28 @@ Los resultados de la revisión sistemática de la literatura realizada por Radem
 
 
 \subsubsection{En Costa Rica}
+El sector de tecnología de la información en Costa Rica ha experimentado el mismo crecimiento explosivo con respecto a la oferta y demanda de personal calificado que se ha llegado a reportar en otros países. De 1997 al 2000 las compañías de desarrollo de software y otros emprendimientos crecieron a una tasa del 40\% al 60\% en la planilla\cite{cenfotec-2}.
 
+De acuerdo con \cite{prosic} con respecto a la fuerza laboral total del país, el empleo en el sector de tecnologías de la información representó en 2006 un $2,32$ por ciento y en 2007, $2,47$, mostrando un leve aumento de $0.15$ por ciento para el último año. El aumento de $4886$ trabajadores en el sector de tecnologías de la información representa un crecimiento del $10.7$ por ciento en relación con la fuerta laboral todal del sector. Por otro lado, el comportamiento del empleo en el área de producción de bienes y servicios de las tecnologías de la información, entre 2006 y 2007 respecto de la fuerza laboral, fue inverso: el porcentaje de trabajadores dedicados a la producción disminuyó un $19.8$ por ciento, mientras que el porcentaje de empleados dedicados a servicios aumentó un $19.6$ por ciento.
+
+En \cite{murillo-trejos} se hizo un mapeo de las habilidades consideradas las más importantes a encontrar en profesionales en tecnologías de la información. Una de las motivaciones de este mapeo es dar a conocer las áreas en las que las empresas multinacionales están más interesadas y de esta forma motivar la creación de nuevos programas educativos para estimular esas habilidades. Las categorías que reportaron mayor interés en las multinacionales fueron las relacionadas con ``Desarrollo e Implementación'' y ``Entrega y Operación''. Esto refleja que las hay un interés marcado en contar con profesionales que puedan tener habilidades que cubran todas las necesidades que se presenten durante el ciclo de desarrollo de sistemas.
+
+
+El estudio llevado a cabo por el Programa Sociendad de la Información y el Conocimiento \cite{prosic}(Prosic) de la Universidad de Costa Rica señala que hay una preocupación en el país por la escasez de mano de obra calificada para el sector de las tecnologías de la información, particularmente en la industria del software. Se añade que \emph{``en el país no se han tomado las medidas necesarias para que este sector se consolide dentro de una economía del conocimiento. Esta consolidación requiere, entre otras cosas, mayores inversiones en investigación y desarrollo yadecuar los sistemas educativos existentes en el país para que preparen profesionales en adecuada cantidad, así como con buena calidad para satisfacer los requerimientos del mercado laboral.''}
+
+Dentro del mismo estudio, se aplicó una encuesta a 160 organizaciones de tecnologías de la información y se identificó que el principal problema de para el desarrollo del sector es la poca disponibilidad de recurso humano calificado. En este apartado la palabra ``calificado'' es motivo de diferenciación porque aunque se cuenta con fuerza laboral, en muchos casos se ha logrado experimentar insuficiencia en la búsqueda de los conocimientos que se desea que posean. Se acusa de un rezago educativo y recomiendan:
+\begin{itemize}
+    \item Fortalecimiento de la educación técnica
+    \item Ajuste de los programas: actualización de formación y curricula
+    \item Actualización de docentes
+    \item Diseño de carreras efectivamente articuladas
+    \item Integración de oferta y demanda
+    \item Integración entre empresas y sector educativo para la definición de perfiles de formación
+\end{itemize}
+
+
+\section{Conclusión}
+La conclusión
 
 
 % An example of a floating figure using the graphicx package.
@@ -780,11 +820,6 @@ Los resultados de la revisión sistemática de la literatura realizada por Radem
 % footnotes above bottom floats. This can be corrected via the
 % \fnbelowfloat command of the stfloats package.
 
-
-
-
-\section{Conclusión}
-La conclusión
 
 
 
@@ -984,6 +1019,11 @@ Puppet Labs, DevOps Research \& Assessment(DORA). 2017. \emph{State of DevOps}. 
 \bibitem{radermacher-walia}
 Alex Radermacher and Gursimran Walia. 2013. \emph{Gaps between industry expectations and the abilities of graduates}. In Proceeding of the 44th ACM technical symposium on Computer science education (SIGCSE '13). ACM, New York, NY, USA, 525-530. DOI: \url{http://ezproxy.itcr.ac.cr:2075/10.1145/2445196.2445351}
 
+\bibitem{prosic}
+Claudio Pinto, Rafael Herrera, Francisco Mata, Rosaura Matarrita y otros. 2009. \emph{Formación de capital humano en el sector de TIC en Costa Rica}. \hskip 1em plus 0.5em minus 0.4em\relax Facultad Latinoamericana de Ciencias Sociales. Programa de Investigación sobre Economía del Conocimiento en América Latina y el Caribe. Obtenido de \url{http://www.prosic.ucr.ac.cr/sites/default/files/documentos/caphum.pdf}
+
+\bibitem{murillo-trejos}
+Jorge Murillo, Ignacio Trejos. 2017. \emph{IT Skills Mapping Engine}. In World Engineering Education Conference (EDUNINE), IEEE. Vol 2, March 29-22, 2017. Páginas 49-50
 
 \end{thebibliography}
 
