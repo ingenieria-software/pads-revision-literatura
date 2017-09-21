@@ -429,7 +429,7 @@ Cartago, Costa Rica\\
 % in the abstract or keywords.
 \IEEEtitleabstractindextext{%
 \begin{abstract}
-A pesar de la popularidad de las metodologías ágiles de desarrollo de software en la industria, expresada en varias encuestas y estudios recientes, muchas organizaciones siguen reportando en estas mismas encuestas que se cuenta con poco personal capacitado con las habilidades necesarias y que los planes de estudio de carreras de tecnología de información muestran resagos en estos temas. Con el fin de brindar una formación que no solamente incluya la enseñanza de prácticas ágiles sino también el desarrollo de otras actitudes como el trabajo en equipo y el empredurismo, las universidades han venido introduciendo paulativamente estas prácticas a sus planes de estudio principalmente por medio de enfoques de aprender-haciendo. Universidades en Costa Rica también han reportado la inclusión de estos temas en sus planes de estudio como respuesta a las tendencias mundiales y para apoyar la creciente industria de desarrollo de software del país. Este artículo presenta una revisión de literatura en sobre la aplicación de prácticas ágiles de desarrollo de software en universidades extranjeras y de Costa Rica.
+A pesar de la popularidad de las metodologías ágiles de desarrollo de software en la industria, expresada en varias encuestas y estudios recientes, muchas organizaciones siguen reportando en estas mismas encuestas que se cuenta con poco personal capacitado con las habilidades necesarias y que los planes de estudio de carreras de tecnología de información muestran rezagos en estos temas. Con el fin de brindar una formación que no solamente incluya la enseñanza de prácticas ágiles sino también el desarrollo de otras actitudes como el trabajo en equipo y el empredurismo, las universidades han venido introduciendo paulativamente estas prácticas a sus planes de estudio principalmente por medio de enfoques de aprender-haciendo. Universidades en Costa Rica también han reportado la inclusión de estos temas en sus planes de estudio como respuesta a las tendencias mundiales y para apoyar la creciente industria de desarrollo de software del país. Este artículo presenta una revisión de literatura en sobre la aplicación de prácticas ágiles de desarrollo de software en universidades extranjeras y de Costa Rica.
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
@@ -621,6 +621,41 @@ La guía en \cite{wiggins} es un ejemplo de la aplicación de las prácticas de 
 
 Al igual que en la sección \ref{sec:practicas-agiles-desarrollo}, en el apéndice \ref{apendice:b} se proveen definiciones de estas prácticas.
 
+\section{Relevancia de Prácticas ágiles de desarrollo} \label{sec:relevancia-agile}
+Los reportes consultados sobre el estado actual de metodologías ágiles\cite{version-one} y DevOps\cite{puppet-devops} reflejan una amplia aceptación de ambos enfoques en la industria de tecnología. Por ejemplo, en \cite{version-one} el 94\% de las organizaciones que tomaron parte del estudio respondieron afirmativamente a la pregunta de si practicaban enfoques ágiles y el 71\% de las mismas reportó que estan llevando a cabo iniciativas en DevOps. En \cite{puppet-devops} se señala que para lograr que las personas logren el máximo provecho de DevOps, las prácticas técnicas tales como automatización de pruebas, puesta en producción automática, integración continua y un manejo de versiones detallado son claves. Los que práctican DevOps tienen que estar concientes del uso de estas prácticas técnicas y no solamente de herramientas específicas. 
+
+La encuesta realizada en \cite{kropp-meier-1} donde 160 compañías suizas y casi 200 profesionales en tecnología de información participaron, también muestra resultados claros. Las compañías y los profesionales que siguen metodologías ágiles están más satisfechos con los enfoques que estas promueven que con metodologías basadas en planeamiento. Otro resultado importante del estudio es que los principales objetivos de introducir desarrollo ágil son: la gestión de prioridades cambiantes y la mejora del proceso de desarrollo en general. La encuesta muestra que no hay tantos ingenieros con habilidades para desarrollo ágil y esto le sugiere a los autores que los estudiantes no están siendo educados con las habilidades necesarias. El 70\% de los participantes piensan que los bachilleres en computación tiene muy poco conocimiento de metodologías ágiles; la mayoría piensa lo mismo para los graduados de maestría. Cuando se consultó sobre si las metodologías ágiles deberían ser parte integral del plan de estudios de carreras de computación, la gran mayoría recomendó que el desarrollo de software ágil debería de ser parte integral de estos planes de estudio.
+
+Un estudio similar se llevó a cabo en el estado de Minnesota, Estados Unidos, con el fin de evaluar una nuevas opciones en los planes de estudio de carreras de tecnología de información de las universidades de ese estado \cite{advance-it}. El estudio señala que las habilidades en desarrollo ágil son cada vez más importantes en las decisiones de contratación, el 62\% lo considera un factor relevante y el 41\% comenzaron a hacerlo en los últimos 3 años. El 59\% dice que su desarrollo y entrega de software están basadas en prácticas ágiles/DevOps/\emph{Cloud Computing}. Hay preocupación sobre la disposición de la mano de obra de Minnesota para promover una \emph{transformación digital} y de la capacidad del sistema educacional del estado en producir esta fuerza de trabajo: solamente el 32\% está de acuerdo que la fuerza de trabajo está bien preparada en términos de competencias y el 49\% no están de acuerdo en que el sistema educativo está produciendo una fuerza laboral digital suficientemente grande.
+
+Los resultados de la revisión sistemática de la literatura realizada por Rademarcher y Walia \cite{radermacher-walia} para determinar qué áreas de los estudiantes graduados con más frecuencia no alcanzan las expectativas de la industria o la academia indican que los estudiantes recién graduados presentan carencias en áreas técnicas, personales y profesionales. Dentro de las carencias en las áreas técnicas, el estudio de \cite{radermacher-walia} señala las siguientes:
+\begin{itemize}
+    \item Carencias en herramientas de software: una categoría que reporta muchas deficiencias y que muestra varios ejemplos específicos. El ejemplo más comunmente reportado es la gestión de la administración de la configuración. Los estudios consultados en este artículo encontraron que los desarrolladores de software recién contratados carecían de experiencia en herramientas de gestión de la configuración. Así mismo se mencion que existe una brecha grande entre las habilidades de los profesionales de software con respecto a su educación.
+    \item Pruebas: es una área que presenta deficiencias tanto en la industria como en la academia. Estudiantes avanzandos mostraron poca habilidad de uso de herramientas para cobertura de de pruebas y en escribir pruebas relevantes. Los desarrolladores de software recién contratados muestran carencias en la habilidad de llevar a cabo pruebas de código exhaustivas. También se reportaron problemas con respeto al \emph{debugging} de código.
+\end{itemize}
+
+
+\subsubsection{En Costa Rica}
+El sector de tecnología de la información en Costa Rica ha experimentado el mismo crecimiento explosivo con respecto a la oferta y demanda de personal calificado que se ha llegado a reportar en otros países. De 1997 al 2000 las compañías de desarrollo de software y otros emprendimientos crecieron a una tasa del 40\% al 60\% en la planilla\cite{cenfotec-2}.
+
+De acuerdo con \cite{prosic} con respecto a la fuerza laboral total del país, el empleo en el sector de tecnologías de la información representó en 2006 un $2,32\%$ y en 2007, $2,47\%$, mostrando un leve aumento de $0.15\%$ para el último año. El aumento de $4886$ trabajadores en el sector de tecnologías de la información representa un crecimiento del $10.7\%$ en relación con la fuerta laboral todal del sector. Por otro lado, el comportamiento del empleo en el área de producción de bienes y servicios de las tecnologías de la información, entre 2006 y 2007 respecto de la fuerza laboral, fue inverso: el porcentaje de trabajadores dedicados a la producción disminuyó un $19.8\%$, mientras que el porcentaje de empleados dedicados a servicios aumentó un $19.6\%$.
+
+En \cite{murillo-trejos} se hizo un mapeo de las habilidades consideradas las más importantes a encontrar en profesionales en tecnologías de la información. Una de las motivaciones de este mapeo es dar a conocer las áreas en las que las empresas multinacionales están más interesadas y de esta forma motivar la creación de nuevos programas educativos para estimular esas habilidades. Las categorías que reportaron mayor interés en las multinacionales fueron las relacionadas con ``Desarrollo e Implementación'' y ``Entrega y Operación''. Esto refleja que las hay un interés marcado en contar con profesionales que puedan tener habilidades que cubran todas las necesidades que se presenten durante el ciclo de desarrollo de sistemas.
+
+
+El estudio llevado a cabo por el Programa Sociendad de la Información y el Conocimiento \cite{prosic}(Prosic) de la Universidad de Costa Rica señala que hay una preocupación en el país por la escasez de mano de obra calificada para el sector de las tecnologías de la información, particularmente en la industria del software. Se añade que \emph{``en el país no se han tomado las medidas necesarias para que este sector se consolide dentro de una economía del conocimiento. Esta consolidación requiere, entre otras cosas, mayores inversiones en investigación y desarrollo yadecuar los sistemas educativos existentes en el país para que preparen profesionales en adecuada cantidad, así como con buena calidad para satisfacer los requerimientos del mercado laboral.''}
+
+Dentro del mismo estudio, se aplicó una encuesta a 160 organizaciones de tecnologías de la información y se identificó que el principal problema de para el desarrollo del sector es la poca disponibilidad de recurso humano calificado. En este apartado la palabra ``calificado'' es motivo de diferenciación porque aunque se cuenta con fuerza laboral, en muchos casos se ha logrado experimentar insuficiencia en la búsqueda de los conocimientos que se desea que posean. Se acusa de un rezago educativo y recomiendan:
+\begin{itemize}
+    \item Fortalecimiento de la educación técnica
+    \item Ajuste de los programas: actualización de formación y curricula
+    \item Actualización de docentes
+    \item Diseño de carreras efectivamente articuladas
+    \item Integración de oferta y demanda
+    \item Integración entre empresas y sector educativo para la definición de perfiles de formación
+\end{itemize}
+
+
 \section{Enseñanza de Prácticas Ágiles de Desarrollo de Software} \label{sec:ensenanza}
 De acuerdo con los resultados obtenidos a partir la búsqueda en la sección \ref{sec:resultado-rev-lit}, se evidencia que la enseñanza de prácticas ágiles de desarrollo es un tema activo de investigación y desarrollo en universidades extranjeras. En \cite{kropp-meier-1} se señala que a pesar que el desarrollo de software ágil ha existido por más de una década, incluso antes del Manifiesto Ágil, la enseñanza de desarrollo de software ágil sólo ha llamado la atención en conferencias educativas y de investigación en años recientes. Una razón para esto puede ser que el desarrollo ágil no tiene bases teóricas sino que más bien ha sido desarrollada a partir de la práctica. En \cite{hazzan-dubinsky} se discute las razones por las cuáles los programas de ingeniería de software deberían de enseñar desarrollo ágil de software. Enfatizan que los ingenieros de software no solamente necesitan ejercitar habilidades técnicas sino también sociales y éticas, que son la aspectos básicos del desarrollo ágil.
 
@@ -691,45 +726,10 @@ La Universidad de Costa Rica ha reportado la introducción de \emph{Scrum} y pro
 \end{itemize}
 
 
-\section{Relevancia de Prácticas ágiles de desarrollo} \label{sec:relevancia-agile}
-Los reportes consultados sobre el estado actual de metodologías ágiles\cite{version-one} y DevOps\cite{puppet-devops} reflejan una amplia aceptación de ambos enfoques en la industria de tecnología. Por ejemplo, en \cite{version-one} el 94\% de las organizaciones que tomaron parte del estudio respondieron afirmativamente a la pregunta de si practicaban enfoques ágiles y el 71\% de las mismas reportó que estan llevando a cabo iniciativas en DevOps. En \cite{puppet-devops} se señala que para lograr que las personas logren el máximo provecho de DevOps, las prácticas técnicas tales como automatización de pruebas, puesta en producción automática, integración continua y un manejo de versiones detallado son claves. Los que práctican DevOps tienen que estar concientes del uso de estas prácticas técnicas y no solamente de herramientas específicas. 
-
-La encuesta realizada en \cite{kropp-meier-1} donde 160 compañías suizas y casi 200 profesionales en tecnología de información participaron, también muestra resultados claros. Las compañías y los profesionales que siguen metodologías ágiles están más satisfechos con los enfoques que estas promueven que con metodologías basadas en planeamiento. Otro resultado importante del estudio es que los principales objetivos de introducir desarrollo ágil son: la gestión de prioridades cambiantes y la mejora del proceso de desarrollo en general. La encuesta muestra que no hay tantos ingenieros con habilidades para desarrollo ágil y esto le sugiere a los autores que los estudiantes no están siendo educados con las habilidades necesarias. El 70\% de los participantes piensan que los bachilleres en computación tiene muy poco conocimiento de metodologías ágiles; la mayoría piensa lo mismo para los graduados de maestría. Cuando se consultó sobre si las metodologías ágiles deberían ser parte integral del plan de estudios de carreras de computación, la gran mayoría recomendó que el desarrollo de software ágil debería de ser parte integral de estos planes de estudio.
-
-Un estudio similar se llevó a cabo en el estado de Minnesota, Estados Unidos, con el fin de evaluar una nuevas opciones en los planes de estudio de carreras de tecnología de información de las universidades de ese estado \cite{advance-it}. El estudio señala que las habilidades en desarrollo ágil son cada vez más importantes en las decisiones de contratación, el 62\% lo considera un factor relevante y el 41\% comenzaron a hacerlo en los últimos 3 años. El 59\% dice que su desarrollo y entrega de software están basadas en prácticas ágiles/DevOps/\emph{Cloud Computing}. Hay preocupación sobre la disposición de la mano de obra de Minnesota para promover una \emph{transformación digital} y de la capacidad del sistema educacional del estado en producir esta fuerza de trabajo: solamente el 32\% está de acuerdo que la fuerza de trabajo está bien preparada en términos de competencias y el 49\% no están de acuerdo en que el sistema educativo está produciendo una fuerza laboral digital suficientemente grande.
-
-Los resultados de la revisión sistemática de la literatura realizada por Rademarcher y Walia \cite{radermacher-walia} para determinar qué áreas de los estudiantes graduados con más frecuencia no alcanzan las expectativas de la industria o la academia indican que los estudiantes recién graduados presentan carencias en áreas técnicas, personales y profesionales. Dentro de las carencias en las áreas técnicas, el estudio de \cite{radermacher-walia} señala las siguientes:
-\begin{itemize}
-    \item Carencias en herramientas de software: una categoría que reporta muchas deficiencias y que muestra varios ejemplos específicos. El ejemplo más comunmente reportado es la gestión de la administración de la configuración. Los estudios consultados en este artículo encontraron que los desarrolladores de software recién contratados carecían de experiencia en herramientas de gestión de la configuración. Así mismo se mencion que existe una brecha grande entre las habilidades de los profesionales de software con respecto a su educación.
-    \item Pruebas: es una área que presenta deficiencias tanto en la industria como en la academia. Estudiantes avanzandos mostraron poca habilidad de uso de herramientas para cobertura de de pruebas y en escribir pruebas relevantes. Los desarrolladores de software recién contratados muestran carencias en la habilidad de llevar a cabo pruebas de código exhaustivas. También se reportaron problemas con respeto al \emph{debugging} de código.
-\end{itemize}
-
-
-\subsubsection{En Costa Rica}
-El sector de tecnología de la información en Costa Rica ha experimentado el mismo crecimiento explosivo con respecto a la oferta y demanda de personal calificado que se ha llegado a reportar en otros países. De 1997 al 2000 las compañías de desarrollo de software y otros emprendimientos crecieron a una tasa del 40\% al 60\% en la planilla\cite{cenfotec-2}.
-
-De acuerdo con \cite{prosic} con respecto a la fuerza laboral total del país, el empleo en el sector de tecnologías de la información representó en 2006 un $2,32\%$ y en 2007, $2,47\%$, mostrando un leve aumento de $0.15\%$ para el último año. El aumento de $4886$ trabajadores en el sector de tecnologías de la información representa un crecimiento del $10.7\%$ en relación con la fuerta laboral todal del sector. Por otro lado, el comportamiento del empleo en el área de producción de bienes y servicios de las tecnologías de la información, entre 2006 y 2007 respecto de la fuerza laboral, fue inverso: el porcentaje de trabajadores dedicados a la producción disminuyó un $19.8\%$, mientras que el porcentaje de empleados dedicados a servicios aumentó un $19.6\%$.
-
-En \cite{murillo-trejos} se hizo un mapeo de las habilidades consideradas las más importantes a encontrar en profesionales en tecnologías de la información. Una de las motivaciones de este mapeo es dar a conocer las áreas en las que las empresas multinacionales están más interesadas y de esta forma motivar la creación de nuevos programas educativos para estimular esas habilidades. Las categorías que reportaron mayor interés en las multinacionales fueron las relacionadas con ``Desarrollo e Implementación'' y ``Entrega y Operación''. Esto refleja que las hay un interés marcado en contar con profesionales que puedan tener habilidades que cubran todas las necesidades que se presenten durante el ciclo de desarrollo de sistemas.
-
-
-El estudio llevado a cabo por el Programa Sociendad de la Información y el Conocimiento \cite{prosic}(Prosic) de la Universidad de Costa Rica señala que hay una preocupación en el país por la escasez de mano de obra calificada para el sector de las tecnologías de la información, particularmente en la industria del software. Se añade que \emph{``en el país no se han tomado las medidas necesarias para que este sector se consolide dentro de una economía del conocimiento. Esta consolidación requiere, entre otras cosas, mayores inversiones en investigación y desarrollo yadecuar los sistemas educativos existentes en el país para que preparen profesionales en adecuada cantidad, así como con buena calidad para satisfacer los requerimientos del mercado laboral.''}
-
-Dentro del mismo estudio, se aplicó una encuesta a 160 organizaciones de tecnologías de la información y se identificó que el principal problema de para el desarrollo del sector es la poca disponibilidad de recurso humano calificado. En este apartado la palabra ``calificado'' es motivo de diferenciación porque aunque se cuenta con fuerza laboral, en muchos casos se ha logrado experimentar insuficiencia en la búsqueda de los conocimientos que se desea que posean. Se acusa de un resago educativo y recomiendan:
-\begin{itemize}
-    \item Fortalecimiento de la educación técnica
-    \item Ajuste de los programas: actualización de formación y curricula
-    \item Actualización de docentes
-    \item Diseño de carreras efectivamente articuladas
-    \item Integración de oferta y demanda
-    \item Integración entre empresas y sector educativo para la definición de perfiles de formación
-\end{itemize}
-
-
 \section{Definición del Problema y Objetivos} \label{sec:problema-objetivos}
 
 \subsection{Problema}
-Las prácticas ágiles de desarrollo de software están cambiando las formas tradicionales de hacer y entregar software. Estas prácticas gozan de una gran aceptación y auge dentro la industria del software desde hace más de una década atrás. En Costa Rica, a pesar de contar con una creciente industria de software, encuestas y estudio revelan que los empleadores señalan deficiencias en las habilidades de desarrollo ágiil como programación, pruebas, integración y entrega, aunado a lo anterior se acusa un resago en los planes de estudio de las carreras de tecnología de la información con respecto a las necesidades de la industria.
+Las prácticas ágiles de desarrollo de software están cambiando las formas tradicionales de hacer y entregar software. Estas prácticas gozan de una gran aceptación y auge dentro la industria del software desde hace más de una década atrás. En Costa Rica, a pesar de contar con una creciente industria de software, encuestas y estudios revelan que los empleadores señalan deficiencias en las habilidades de desarrollo ágil como programación, pruebas, integración y entrega. Aunado a lo anterior se acusa un rezago en los planes de estudio de las carreras de tecnología de la información con respecto a las necesidades de la industria.
 
 \subsection{Objetivo General}
 Explorar la penetración de prácticas ágiles de desarrollo de software en los planes de estudio de las carreras en tecnología de la información en Costa Rica.
@@ -749,9 +749,9 @@ Explorar la penetración de prácticas ágiles de desarrollo de software en los 
 \begin{itemize}
     \item ¿Qué son prácticas ágiles de desarrollo de software? (Objetivo específico \ref{sec:objetivo-especifico-1})
     \item ¿Cuáles son las prácticas ágiles de desarrollo de software que gozan de mayor aceptación en la industria? (Objetivo específico \ref{sec:objetivo-especifico-1})
-    \item ¿Cuáles prácticas ágiles de desarrollo de software se enseñan durante la carrera? \ref{sec:objetivo-especifico-2})
-    \item ¿Cómo se implementan estas prácticas de desarrollo ágil en los planes de estudio? \ref{sec:objetivo-especifico-2})
-    \item ¿Qué causas benefician o perjudican la enseñanza de estas prácticas en las universidades en donde se imparte? \ref{sec:objetivo-especifico-3})
+    \item ¿Cuáles prácticas ágiles de desarrollo de software se enseñan durante la carrera? (Objetivo específico \ref{sec:objetivo-especifico-2})
+    \item ¿Cómo se implementan estas prácticas de desarrollo ágil en los planes de estudio? (Objetivo específico \ref{sec:objetivo-especifico-2})
+    \item ¿Qué causas benefician o perjudican la enseñanza de estas prácticas en las universidades en donde se imparte? (Objetivo específico \ref{sec:objetivo-especifico-3})
 \end{itemize}
 
 
@@ -764,7 +764,7 @@ Universidades reportan la aplicación de la enseñanza de las prácticas ágiles
 
 En Costa Rica, también se ha reportado la enseñanza de prácticas ágiles de desarrollo en las universidades. Se destacan los esfuerzos de la Universidad Cenfotec que desde inicios del 2000 incluyó principios ágiles como parte de los proyectos de programación que llevaban a cabo los estudiantes. Los enfoques de aprender-haciendo también son los que se utilizan a la hora de introducir al estudiante en estos temas. 
 
-A pesar de la relevancia y adopción de las metodologías ágiles en la industria de software en Costa Rica, los empleadores mantienen opiniones no tan favorables como se podría esperar en cuanto a las habilidades como programación, pruebas, integración y entrega de los empleados y se aduce que una razón de esto es que los planes de estudio de las universidades muestran un resago en con respecto a las necesidades de la industria. Lo anterior sugiere que una revisión en la adopción de prácticas ágiles de desarrollo de software en los planes de estudio de las carreras de tecnología de la información de Costa Rica con el fin de explorar cuáles prácticas se están enseñando y cómo se están aplicando las mismas. Esto podría identificar oportunidades de mejora en las mismas con el fin de pulir las habilidades en programación de los estudiantes y hacer que el conocimiento adquirido pueda estar mejor alineado con las tendencias de la tecnología y la industria.
+A pesar de la relevancia y adopción de las metodologías ágiles en la industria de software en Costa Rica, los empleadores mantienen opiniones no tan favorables como se podría esperar en cuanto a las habilidades como programación, pruebas, integración y entrega de los empleados y se aduce que una razón de esto es que los planes de estudio de las universidades muestran un rezago en con respecto a las necesidades de la industria. Lo anterior sugiere que una revisión en la adopción de prácticas ágiles de desarrollo de software en los planes de estudio de las carreras de tecnología de la información de Costa Rica con el fin de explorar cuáles prácticas se están enseñando y cómo se están aplicando las mismas. Esto podría identificar oportunidades de mejora en las mismas con el fin de pulir las habilidades en programación de los estudiantes y hacer que el conocimiento adquirido pueda estar mejor alineado con las tendencias de la tecnología y la industria.
 
 
 
@@ -980,7 +980,7 @@ Kent~Beck, Mike~Beelde, Arie~van Bennekum, Allistair Cockburn, et al. 2001. \emp
 
 % 3
 \bibitem{version-one}
-Version One. \emph{11th Annual State of Agile Report}. 2017. Obtenido de \url{http://stateofagile.versionone.com/}
+Version One. 2017. \emph{11th Annual State of Agile Report}. Obtenido de \url{http://stateofagile.versionone.com/}
 
 % 4
 \bibitem{henrik-b}
@@ -1024,7 +1024,7 @@ Jan-Philipp Steghöfer, Eric Knauss, Emil Alégroth, Imed Hammouda, Håkan Burde
 
 % 14
 \bibitem{advance-it}
-Advance IT Minnesota.  2016.\emph{Renewing the IT Curriculum: Responding to Agile, DevOps, and Digital Transformation}. Rep. (November 1, 2016). St. Paul, MN: . Obtenido de \url{www.DynamicIT.education}
+Advance IT Minnesota.  2016.\emph{Renewing the IT Curriculum: Responding to Agile, DevOps, and Digital Transformation}. Rep. (November 1, 2016). St. Paul, MN. Obtenido de \url{www.DynamicIT.education}
 
 % 15
 \bibitem{cenfotec-2}
