@@ -1,0 +1,210 @@
+\section{Marco de Referencia Contextual}
+En el nivel más amplio, esta propuesta se basa en la interacción de dos áreas:
+\begin{itemize}
+    \item planes de estudio: que abarcan la formalización de conocimiento
+    \item prácticas ágiles de desarrollo de software: transmisición y entrenamiento de conocimiento de la industria
+\end{itemize}
+
+\subsection{Planes de Estudio} \label{sec:ch1-planes-estudio}
+Existen varias organizaciones profesionales preocupadas de la formación académica en carreras de tecnología de la información:
+\begin{itemize}
+    \item \emph{The Association for Computing Machinery} (ACM)
+    \item \emph{The Institute for Electrical and Electronic Engineers}, en particular la Sociedad de Computación (\emph{Computer Society} -- IEEE-CS)
+    \item \emph{The Association for Information Systems} (AIS)
+\end{itemize}
+
+El ACM cumple el rol más amplio, es la organización presente en una gran variedad de guías para educadores que va desde el kinder hasta universidad. La ACM señala en \cite{acm-curriculum} \emph{``A partir de la década de los 1960's, la ACM juntos con sociedades profesionales y científicas líderes en computación, se han dado a la tarea de reunir una serie de recomendaciones para el panorama rápidamente cambiante de la tecnología en computación''}.
+
+En el 2005, un grupo de trabajo conjuntado por la ACM, AIS y el IEEE-CS establecieron los límites entre varios campos de la tecnología en un reporte titulado: \emph{Computing Curricula 2005: The Overview Report} \cite{shackelford-et-al}. Las disciplinas identificadas en el reporte de 2005 han sido usado como base para la organización de mucho planes de estudio en muchos países:
+\begin{enumerate}
+    \item Ciencias de la Computación (\emph{Computer Science}) \label{item:cs}
+    \item Ingeniería de Computadores (\emph{Computer Engineering}) \label{item:ce}
+    \item Sistemas de Información (\emph{Information Systems}) \label{item:is}
+    \item Tecnología de la Información (\emph{Information Technology}) \label{item:it}
+    \item Ingeniería de Software (\emph{Software Engineering}) \label{item:se}
+\end{enumerate}
+
+De las anteriores, las disciplinas \ref{item:cs}-\ref{item:is} se conocen desde hace muchas décadas atrás, mientras que \ref{item:it}-\ref{item:se} son más recientes. En el reporte del 2005 no se afirma que estas fueran las únicas, en el mismo de preveía la aparación de nuevas disciplinas en computación. 
+
+Las disciplinas se describen en detalle en el reporte y a continuación se extraen algunas definiciones:
+
+\paragraph{Ingeniería de Computadores} \emph{``abarca el diseño y construcción de computadoras y sistemas basados en computadoras. Involucra el estudio de hardware, software, comunicaciones y la interacción entre ellos\ldots su estudio puede hacer mayor énfasis en hardware que en el software o podría existir un énfasis balanceado.''} (página 13)
+
+\paragraph{Ciencias de la Computación} \emph{``abarca un amplio rango que va desde bases teóricas y algorítmicas a desarrollos de vanguardia en robótica, visión computacional, sistemas inteligentes, bioinformática\ldots Mientras otras disciplinas puede producir graduados con habilidades más relevantes para el trabajo, ciencias de la computación ofrece una base detallada que permit a los graduados adaptarse a nuevas tecnologías e ideas''} (páginas 13-14)
+
+\paragraph{Ingeniería de Software} \emph{``es la disciplina del desarrollo y mantenimiento de sistemas de software que se comportan de forma confiable y eficientemente, que tienen costos razonables de desarrollo y mantenimiento y satisfacen todos los requerimiento que los clientes han definido\ldots ha evolucionado como respuesta a factores tales como el crecimiento e impacto de grandes sistemas de software en una amplia variedad de situaciones y la creciente importancia de aplicaciones de software críticas. La ingeniería de software es diferente de otras disciplinas de ingeniería debido a ambos, la naturaleza intangible del software y la naturalize discontinua de la operación del software\ldots''} (página 15)
+
+
+\paragraph{Sistemas de Información} \emph{``se concentra en la integración de soluciones de tecnología de información y procesos de negocio para cumplir las necesidades del negocio y otras empresas\ldots La mayoría de los programas en sistemas de información se encuentran en escualas de negocios. Todos los grados de sistemas de información combinan negocios y un conjunto de cursos en computación. Existe una variedad de programas en sistemas de información que tienen una mayor concentración sistemas de información computacionales, mientras que otros programas tienen una mayor énfasis en administración de sistemas de información. Hoy en día los nombres de los programas no son siempre consistentes''} (página 14)
+
+\paragraph{Tecnología de la Información} es vista como la inversa de sistemas de información: \emph{``su énfasis es en la tecnología como tal más que en la información que tiene y transmite\ldots las organizaciones de cualquier tipo son dependientes de tecnología de información. Necesitan tener los sistemas apropiados trabajando. Esos sistemas deben trabajar apropiadamente, ser seguros, actualizados, mantenidos, reemplazados. Los empleados en las organizaciones requieren soporte del personal de IT para entender sistemas de computadora y sus software, y están comprometidos a resolver cualquier problema relacionado con computadoras. Los graduados de tecnología de información son los que abarcan estas necesidades''} (página 14)
+
+\subsubsection{Planes de estudio en consideración}
+De las cinco grandes disciplinas mencionadas en la sección \ref{sec:ch1-planes-estudio}, esta propuesta se enfocará en:
+\begin{itemize}
+    \item Ciencias de la Computación
+    \item Ingeniería de Software
+    \item Sistemas de Información
+    \item Tecnología de la Información
+\end{itemize}
+
+y estará menos enfocado en ingeniería de computadores, el cual estará fuera del alcance del resto de este documento. En la sección \ref{sec:ch1-alcance} se brindan los planes de estudio a considerar para el caso de la universidades de Costa Rica.
+
+
+\subsection{Desarrollo de Software Ágil}
+Este movimiento se inicia a principios de la década del 2000 como alternativa a métodos de desarrollo tradicionales a los cuales se les atribuyen la realización de muchos procesos los cuales impiden con la implementación pronta de los requirimientos. 
+
+Este nuevo estilo se basa en desarrollo basado en pruebas incremental e iterativo y refactorización constante para prevenir la deuda técnica. Requiere una integración continua de código, automatización de la infraestructura, capacidad para escalar de forma dinámica y sistemas débilmente acoplados. 
+
+La segregación de funciones especializada es reemplazada por colaboración multifuncional, llevada a cabo por equipos de no más de 8 personas centrados en la implementación de un producto. 
+
+En estos esquemas de trabajo, los empleadores buscan lo que se le conoce como los profesionales tipo ``T'', que son más flexibles en los roles que desempeñan y esto permite que los equipos se muevan más rápido. \emph{El principio de los recursos tipo T: desarrollar personas que tienen conocimiento profundo de un área y otro más amplio en otras}. La importancia de equipos que tienen altos niveles de confianza está ganando mucha atención debido al impacto cuantificable que esto tiene en la entrega de un producto. \cite{rozovsky}
+
+DevOps es otra tendencia, altamente ligada con los principios del desarrollo ágil, que ha ganado mucha popularidad en los últimos años. Informes como \cite{puppet-devops} muestran que las prácticas de desarrollo ágil pueden ser parte de esquemas de entrega continua, ya que tienen una relación significativa con el éxito de la puesta en producción, rendimientos y tasas de error. 
+
+\subsubsection{Prácticas ágiles de desarrollo en consideración}
+El conjunto de prácticas a tomar en consideración en esta propuesta abarcan:
+\begin{itemize}
+    \item Pruebas
+    \item Integración continua
+    \item Estándares de codificación
+    \item Refactorización de código
+    \item Puesta en producción continua
+    \item Propiedad compartida del código
+    \item Diseño emergente
+\end{itemize}
+
+Estas se detallan en la sección \ref{sec:practicas-agiles-desarrollo} y se obtuvieron como parte de la revisión de las prácticas más populares reportadas por profesionales de la industria.  
+
+Aunado a lo anterior, para efectos de esta propuesta se va a considerar DevOps como una práctica de desarrollo ágil a evaluar, esto porque como se menciona en la sección \ref{sec:devops-vs-agile} representa el siguiente paso natural en el movimiento de desarrolo ágil.
+
+\section{Justificación}
+Diversas organizaciones de profesionales y académicos se han dado a la tarea de revisar los planes de estudio de las universidades con el fin de evaluar su relevancia y pertinencia con tendencias en la industria. En el reporte de \cite{shackelford-et-al} se señala que \emph{``algunos programas en TI tienen baja calidad y fallan servir tanto a sus estudiantes como a sus comunidades en una forma responsable. Existen programas en sistemas de información y tecnología de la información que solamente buscan aumentar las matriculas y/o proporcionar la imagen de ser receptivo a las necesidades locales mediante la creación de un programa de TI que es poco más que el reempaquetado de los cursos existentes ofrecidos en otras disciplinas''}. En otros estudios como \cite{advance-it, kropp-meier-1, radermacher-walia} evidencian carencias en los profesionales recién graduados en cuanto al conocimiento e implementación de prácticas ágiles de desarrollo de software. Aunado a estas carencias, se evidencia de igual forma descontento de los empleadores con las universidades porque se considera que estas no están brindando conocimiento alineado con las tendencias del sector.
+
+El desarrollo de software es un tarea desafiante, usualmente requiere de un conocimiento que va más allá de un lenguaje de programación y de la programación misma y que tiene que ver más procesos de ingeniería asociados al aseguramiento de un producto de calidad. En este sentido, el conocimiento de prácticas ágiles de desarrollo de software contribuyen con esta visión, son prácticas que se han desarrallado a lo largo del tiempo y que han probado ser efectivas pero que requiere de tiempo y madurez para que se aprendan y apliquen de manera efectiva. 
+
+Costa Rica no es ajeno a este panorama. En informes tales como \cite{prosic} y \cite{murillo-trejos} se señala también el descontento tanto de las habilidades de personal de ingeniería/desarrollo de software como de la formación de las universidades del país con respecto a la enseñanza de temas más importantes para la industria. Igual de importante es saber que actualmente no se cuenta tampoco con ningún tipo de informe sobre la adopción de prácticas ágiles de desarrollo de software o sobre adopción desarrollo ágil en general en el país que pueda servir como referencia para académicos y empleadores sobre en qué poner mayores esfuerzos.
+
+Un estudio exploratorio sobre la adopción de prácticas ágiles de desarrollo de software en los planes de estudio de universidades de Costa Rica podría servir como punto de partida para evaluar la relevancia que se le dan a la enseñanza de estos temas para que de esta forma se pueda comparar su pertinencia con el estado reportado en informes internacionales y realizar esfuerzos en pos de la mejora de su adopción.  
+
+
+
+
+\section{Planteamiento del Problema}
+Las prácticas ágiles de desarrollo de software están cambiando las formas tradicionales de hacer y entregar software. Estas prácticas gozan de una gran aceptación y auge dentro la industria del software desde hace más de una década atrás. En Costa Rica, a pesar de contar con una creciente industria de software, encuestas y estudios revelan que los empleadores señalan deficiencias en las habilidades de desarrollo ágil como programación, pruebas, integración y entrega. Aunado a lo anterior se acusa un rezago en los planes de estudio de las carreras de tecnología de la información con respecto a las necesidades de la industria.
+
+\section{Objetivos}
+
+\subsection{Objetivo General}
+Explorar la penetración de prácticas ágiles de desarrollo de software en los planes de estudio de las carreras en tecnología de la información en Costa Rica.
+
+\subsection{Objetivo Específicos}
+
+\paragraph{1.} Dar a conocer las prácticas ágiles de desarrollo de software de mayor adopción en la industria \label{sec:objetivo-especifico-1}
+
+\paragraph{2.} Identificar la aplicación de prácticas ágiles de desarrollo de software como parte de la enseñanza de carreras de tecnología de información en Costa Rica. \label{sec:objetivo-especifico-2}
+
+\paragraph{3.} Exponer causas por medio de las cuales la enseñanza de prácticas ágiles de desarrollo de software se ve impactada tanto de forma positiva como negativa en los centros de estudio en donde se imparte carreras de tecnología de la información en Costa Rica. \label{sec:objetivo-especifico-3}
+
+
+\subsection{Preguntas de Investigación}
+Preguntas de investigación asociadas a los objetivos específicos:
+\begin{itemize}
+    \item ¿Qué son prácticas ágiles de desarrollo de software? (Objetivo específico 1)
+    \item ¿Cuáles son las prácticas ágiles de desarrollo de software que gozan de mayor aceptación en la industria? (Objetivo específico 1)
+    \item ¿Cuáles prácticas ágiles de desarrollo de software se enseñan durante la carrera? (Objetivo específico 2)
+    \item ¿Cómo se implementan estas prácticas de desarrollo ágil en los planes de estudio? (Objetivo específico 3)    
+    \item ¿Qué beneficia o perjudica la enseñanza de nuevas habilidades en programación, pruebas, integración, entrega y qué impacto genera esta enseñanza en aspectos tales como colaboración, generación de mejores hábitos de programación, emprendedurismo e inserción laboral? (Objetivo específico 3)    
+\end{itemize}
+
+
+\section{Alcance y Limitaciones} \label{sec:ch1-alcance}
+
+\subsection{Alcance}
+
+Para la realización de este estudio se pretende analizar los planes de estudio de las carreras en Ingeniería de Sistemas, Computación e Informática aprobadas por el Consejo Superior de Educación (CONESUP) de Costa Rica. En el Cuadro \ref{table:listado-conesup} se listan las carreras aprobadas por el CONESUP en estas áreas, al momento de escribir esta propuesta. 
+
+\begin{table}[h!]
+    \footnotesize
+    \begin{tabular}{ll}
+        \toprule[1.5pt]
+        \textbf{Universidad} & \textbf{Carrera}\\
+        \midrule
+        \gls{unadeca} & Bachillerato en Ingeniería de Sistemas \\
+        \gls{uam} & Bachillerato en Ingeniería de Sistemas \\
+        UACA &	Bachillerato en Ingeniería de Sistemas \\
+        Católica de Costa Rica & 	Bachillerato en Ingeniería de Sistemas \\
+        CENFOTEC	& Bachillerato en Ingeniería del Software \\
+        CENFOTEC & Bachillerato en Ingeniería en tecnologías de Información y Comunicación \\
+        Central &  Bachillerato en Ingeniería Informática \\ 
+        UCEM & Bachillerato en Ingeniería de Sistemas \\
+        Federada de Costa Rica & Bachillerato en Sistemas de Computación \\
+        Fidélitas & Bachillerato en Ingeniería de Sistemas de Computación \\
+        Hispanoamericana &	Bachillerato en Ingeniería Informática \\
+        UIA &	Bachillerato en Ingeniería de Software \\
+        UIA &	Bachillerato en Ingeniería en Informática \\
+        UIA &	Bachillerato en Ingeniería en Sistemas de Información \\
+        UISIL &	Bachillerato en Ingeniería de Sistemas \\
+        INVENIO & Licenciatura en Tecnologías de la Información y Comunicación Empresarial \\
+        Latina de Costa Rica & Bachillerato en Ingeniería de Sistemas Informáticos \\
+        Latina de Costa Rica & Bachillerato en Ingeniería de Sistemas Computacionales \\
+        Latina de Costa Rica & Bachillerato en Ingeniería del Software \\
+        ULACIT & Bachillerato en Ingeniería Informática \\
+        Magister & Bachillerato en Ingeniería de Sistemas \\
+        UMCA & Bachillerato en Ingeniería Informática \\
+        Panamericana & Bachillerato en Sistemas de Computación \\
+        Politécnica Internacional	& Bachillerato en Ingeniería Informática \\
+        Tecnológica Costarricense & Bachillerato en Ingeniería en Sistemas Computacionales \\
+        TEC & Bachillerato en Ingeniería en Computación \\
+        TEC & Licenciatura en Administracion de Tecnología de Información \\
+        UCR & Bachillerato en Ingeniería en Computación e Informática \\
+        UCR & Bachillerato en Informática Empresarial \\
+        UNA & Bachillerato en Ingeniería en Sistemas de Información \\
+        UNED & Bachillerato en Ingeniería informática \\
+        UTN & Bachillerato en Ingeniería del Software \\
+        \bottomrule[1.5pt]        
+    \end{tabular}
+    \caption{\footnotesize{Listado de carreras tomadas en cuenta para la propuesta. Fuente: CONESUP}}
+    \label{table:listado-conesup}
+\end{table}
+
+En grado mínimo a considerar es el de Bachillerato. De acuerdo con el listado del Cuadro \ref{table:listado-conesup} existen dos carreras cuyo título mínimo de salida es Licenciatura, los cuales pertenence a las carreras de Tecnologías de la Información y Comunicación Empresarial de la Universidad INVENIO y Administracion de Tecnología de Información del TEC. Se propone inicialmente poner una mayor atención a aquellas carreras que están certificadas por el SINAES -- 8 en total al momento de escribir esta propuesta -- puesto que esta certificación es evidencia de compromiso con altos estándares de calidad. Las carreras acreditadas por el SINAES se listan en el Cuadro \ref{table:listado-sinaes}
+
+\begin{table}[h!]
+    \footnotesize
+    \begin{tabular}{ll}
+        \toprule[1.5pt]
+        \textbf{Universidad} & \textbf{Carrera}\\
+        \midrule
+        Fidélitas & Bachillerato en Ingeniería de Sistemas de Computación \\
+        Latina de Costa Rica & Bachillerato en Ingeniería de Sistemas Computacionales \\
+        ULACIT & Bachillerato en Ingeniería Informática \\
+        TEC & Bachillerato en Ingeniería en Computación \\
+        TEC & Licenciatura en Administracion de Tecnología de Información \\
+        UCR & Bachillerato en Ingeniería en Computación e Informática \\
+        UNA & Bachillerato en Ingeniería en Sistemas de Información \\
+        UNED & Bachillerato en Ingeniería informática \\
+        \bottomrule[1.5pt]  
+    \end{tabular}
+    \caption{Listado de carreras acreditadas por el SINAES. Fuente: SINAES \cite{sinaes}}
+    \label{table:listado-sinaes}
+\end{table}
+ 
+\subsection{Limitaciones}
+\begin{itemize}
+    \item Dificultad en la evaluación de la aplicación de las prácticas ágiles de desarrollo en universidades que impartan la carrera en varias sedes. Si bien a las universidades acreditadas en SINAES se les exige impartir la carrera de la misma forma en todas las sedes acreditadas, existen otras universidades que importan la carrera en otras sedes y no se encuentra acreditadas. Esto podría hacer que tanto los planes como su implementación varíen en cada sede aún estando en la misma universidad. Un ejemplo de esto es el caso de la Universidad Latina en donde la carrera de Ingeniería en Sistemas Computacionales, que se brinda en la sede de Heredia, se encuentra acreditada por SINAES, pero la carrera de Ingeniería en Sistemas Informáticas del resto de las sedes no se encuentra acreditada.
+    \item Resistencia por parte de las autoridades de las universidades consultadas: debido que este propuesta pretende evaluar el grado de penetración de prácticas ágiles de desarrollo en sus planes de estudio, pueden existir escenarios en donde el personal consultado no desee compartir  o cooperar con lo que se le pide.porque a pesar de tener nombres tales como ``Tecnología de la Información'' 
+    \item Poco interés por parte de entidades académicas o de la industria en llevar a cabo un estudio de este tipo. Falta de patrocinio y recursos en general para llevar el estudio a cabo. 
+    \item A pesar del interés por llevar a cabo el estudio,  varias carreras de ``Tecnología de Información'' e ``Sistemas de Información'' van a quedar fuera del ámbito de esta propuesta: esto se da porque como se destaca en la sección \ref{sec:ch1-planes-estudio}, existen carreras que incluyen en su nombre estas palabras pero que sus planes de estudio están más vinculadas con la integración de la tecnología en procesos de negocio. 
+\end{itemize}
+
+
+
+\section{Beneficiarios de la Investigación}
+\begin{itemize}
+    \item \textbf{Universidades:} porque les puede brindar una referencia de lo que están impartiendo con respecto a lo que se hace en la industria. Las prácticas ágiles de desarrollo de software han mostrado ser algo más que una ``moda'' y hoy gozan de gran aceptación dentro de la comunidad profesional de software. Su enseñanza y divulgación puede no solamente motivar a los estudiantes a adquirir nuevas habilidades técnicas, sino que estas también introducen el desarrollo de otras habilidades personales como lo puede ser el trabajo en equipo y emprendedurismo.
+    \item \textbf{Industria de desarrollo de Software:} porque a partir de los resultados de un estudio de este tipo podrían tanto identificar las universidades que formen profesionales con los conocimientos que estos requiren y al mismo tiempo contribuir con aquellas en las que se haya identificado que brindan menor formación en estos temas. El contar con profesionales mejor formados en temas de desarrollo de software mejorará la calidad de sus proyectos y aumentará la competitividad del sector tanto a nivel nacional como internacional.
+    \item \textbf{Aspirantes y estudiantes:} van a poder evaluar qué carreras les brinda la oportunidad de explotar más las habilidades en prácticas ágiles. También los estudiantes activos de las carreras van a poder saber la situación de su carrera con respecto de las demás y de acuerdo con esto proponer posibles ajustes junto con sus profesores o bien, estudiar sobre la posibilidad de desarrollo que les podría dar estas habilidades para sus actividades académicas como para incorporarse al mercado laboral por su cuenta. 
+\end{itemize}
+
+

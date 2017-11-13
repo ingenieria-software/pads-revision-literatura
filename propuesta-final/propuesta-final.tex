@@ -1,0 +1,175 @@
+\documentclass[12pt, twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+
+
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage{utopia}
+
+\usepackage{glossaries}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{cite}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan
+}
+
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Configuracion de formato de parrafos
+\setlength{\parskip}{0.3em}
+\renewcommand{\baselinestretch}{1.3}
+
+
+%%%%%%%%%%
+% Titulo %
+
+\title{Adopción de prácticas ágiles de desarrollo de software en los planes de estudio de universidades de Costa Rica\\
+	{\large Instituto Tecnológico de Costa Rica\\
+	Escuela de Ingeniería en Computación\\
+	Maestría en Computación\\
+	Ingeniería de Software
+	}
+}
+
+\author{Carlos Martín Flores González}
+
+\date{16 de Noviembre del 2017}
+
+
+%%%%%%%%%%%%
+% Glosario %
+
+
+\makeglossaries
+
+
+\newglossaryentry{unadeca}
+{
+    name=UNADECA,
+    description={Universidad Adventista de Centro América}
+}
+
+\newglossaryentry{uam}
+{
+    name=UAM,
+    description={Universidad Americana}
+}
+ 
+\newglossaryentry{maths}
+{
+    name=mathematics,
+    description={Mathematics is what mathematicians do}
+}
+
+
+
+
+%%%%%%%%%%
+
+\begin{document}
+  
+ 
+\maketitle
+
+
+
+%%%%%%%%%%%
+% Indices %
+
+\pagenumbering{roman} 
+\setcounter{page}{1}
+\tableofcontents
+\clearpage
+
+%\listoffigures
+%\cleardoublepage
+%
+\listoftables
+\cleardoublepage
+
+%%%%%%%%%%%%
+% Prefacio %
+
+
+
+
+
+
+\addcontentsline{toc}{chapter}{Glosario}
+\printglossaries
+
+
+
+
+
+\addcontentsline{toc}{chapter}{Resumen}
+\chapter*{Resumen}
+A pesar de la popularidad de las metodologías ágiles de desarrollo de software en la industria, expresada en varias encuestas y estudios recientes, muchas organizaciones siguen reportando en estas mismas encuestas que se cuenta con poco personal capacitado con las habilidades necesarias y que los planes de estudio de carreras de tecnología de información muestran rezagos en estos temas. Con el fin de brindar una formación que no solamente incluya la enseñanza de prácticas ágiles sino también el desarrollo de otras actitudes como el trabajo en equipo y el empredurismo, las universidades han venido introduciendo paulativamente estas prácticas a sus planes de estudio principalmente por medio de enfoques de \emph{aprender-haciendo}. Universidades en Costa Rica también han reportado la inclusión de estos temas en sus planes de estudio como respuesta a las tendencias mundiales y para apoyar la creciente industria de desarrollo de software del país.
+
+
+\addcontentsline{toc}{section}{\emph{Abstract}}
+\section*{\emph{Abstract}}
+Despite the popularity of the agile engineering practices in the software industry reported in recent surveys and studies, many organizations keep reporting in those same surveys which they have no enough personal with the desired skill set, and also that they think that IT curricula is behind in these new software development trends. In order to provide an education which involves agile engineering practices but also other skills such as teamwork and entrepreneurship, universities have been introducing these practices in their curricula, mainly by the use of \emph{learning-by-doing} approaches. Universities in Costa Rica have reported the introduction of these topics in their curricula as a response to their increasing popularity and to support the growing software industry in the country.  
+
+\addcontentsline{toc}{section}{\emph{Palabras Clave / Keywords}}
+\subsection*{Palabras Clave / Keywords}
+agile software development, agile teaching, agile engieering practices, software engineering education, costa rica software education
+
+
+%%%%%%%%%%%%%
+% Capitulos %
+
+\chapter*{Introducción}
+\pagenumbering{arabic}
+\addcontentsline{toc}{chapter}{Introducción}
+\input{capitulos/introduccion}
+
+\chapter{Generalidades de la Investigación}
+\input{capitulos/ch1}
+
+\chapter{Marco Teórico} \label{ch2:marco-teorico}
+\input{capitulos/ch2}
+
+\chapter{Marco Metodológico}
+\input{capitulos/ch3}
+
+
+\chapter{Resultados Esperados}
+\input{capitulos/ch4}
+
+\chapter{Plan de Trabajo}
+\input{capitulos/ch5}
+
+% Bibliografia
+\addcontentsline{toc}{chapter}{Bibliografía}
+\input{capitulos/bibliografia}
+
+%Portada
+% 
+% 
+%\frontmatter
+% 
+%\addcontentsline{toc}{chapter}{Forewordq}
+%hola
+% 
+%\addcontentsline{toc}{chapter}{Dummy entry}
+%Some text...
+% 
+%\tableofcontents
+% 
+%\mainmatter
+% 
+%\chapter{First Chapter}
+% 
+%This will be an empty chapter...
+ 
+\end{document}
+
