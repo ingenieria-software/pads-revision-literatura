@@ -48,38 +48,58 @@ De acuerdo a lo que ha venido exponiendo a lo largo de esta propuesta, este enfo
 \subsection{Encuesta}
 
 
+\subsection{Entrevista}
 
-\begin{tabular}{ |p{5cm}||p{2cm}|p{2cm}|p{2cm}|  }
- \toprule[1.5pt]
- \multicolumn{4}{|c|}{\textbf{Presencia de Prácticas Agiles de Desarrollo en Plan de Estudios}} \\
-\toprule[1.5pt]
-Práctica & Sí & En Planes & No \\
-\toprule[1.5pt]
-    Pruebas unitarias & & & \\
-    \hline
-    TDD & & & \\
-    \hline
-    BDD & & & \\
-    \hline
-    ATDD & & & \\
-    \hline
-    Integración Continua & & & \\
-    \hline
-    Estándares de codificación & & & \\
-    \hline
-    Puesta en producción continua & & & \\
-    \hline
-    Refactorización de código & & & \\
-    \hline
-    Propiedad compartida del código & & & \\
-    \hline
-    Diseño emergente & & & \\
- \hline
-\end{tabular}
+Como preparación para la entrevista, se solicitará de antemano una copia del plan de estudios de la universidad y los programas de los cursos que para el investigador tenga relación directa con desarrollo de software. De esta forma se podrán analizar estos documentos y contrastar la información contenida en ellos con los entrevistados.
 
-
-
+\begin{enumerate}
+    \item ¿Qué objetivos buscaría la universidad con la enseñanza de estas prácticas?
+    \item ¿Qué otros efectos se considera que podría causar la adopción activa de estas prácticas?
+    \item Debido a que mucho del uso que se hace de estas prácticas se da en ambientes en la nube, ¿se expone a los estudiantes a tecnólogías en la nube durante su paso por la carrera?
+    \item Si se tiene planeado adoptar la enseñanza de estas prácticas, ¿cuáles prácticas se planean adoptar?
+    \item ¿Los estudiantes han externalizado su interés en la formación estas prácticas?
+    \item ¿La universidad tiene algún tipo convenio con empresas con el fin de dar a conocer y/o entrenar a estudiantes en estos temas?
+\end{enumerate}
 
 
 
 \section{Procesamiento y Análisis de Datos}
+Se propone seguir el enfoque de análisis cualitativo de \cite{runeson-et-al} para esta tarea, de acuerdo con este enfoque \emph{``La idea es identificar generalizaciones en los datos términos de patrones, sequencias, relaciones, entre otros. El análisis se lleva a cabo de forma iterativa, esto significa que se para a través del material varias veces y cada vez se identifica o ajusta códigos, categorías y similares. Es importante ser sistemático y documentar cada paso de la investigacio4n. Esto hace posible describir una ``cadena de evidencia'' para el lector in el cual no hay forma de que el lector entienda que las conclusiones son confiables''}.
+
+
+\subsection{Pasos en el análisis}
+
+\paragraph{1.} Estudiar el material recolectado en detalle, incluso si ya fue estudiado durante las entrevistas. 
+
+\paragraph{2.} Formular un conjunto de códigos de interés. Es usualmente beneficioso hacer esta formulación como una actividad de grupo. Códigos candidatos:
+\begin{center}
+\begin{itemize}
+    \item PV: punto de vista
+    \item EXP: experiencia en la docencia
+    \item BEN: beneficios y objetivos
+    \item LIM: limitación
+    \item FUT: planes futuros
+\end{itemize}
+
+\end{center}
+
+
+\paragraph{3.} Leer todos los textos y marcar en donde los códigos encajen con los contenidos.\\
+\textbf{3.1.} Transcribir las entrevistas a archivos de texto y marcar secciones de interés\\
+\textbf{3.2.} Asignar códigos a los textos marcados \\
+\textbf{3.3.} Tabular los resultados de la encuesta. \\
+\textbf{3.4.} Aplicar técnicas de estadística descriptiva a los resultados de la encuesta.
+
+\paragraph{4.} Utilizar el material codificado para llegar a conclusiones. Comparar el texto para diferentes códigos. Por ejemplo, si hay un tipo de tipo de enunciado que es común para todos los códigos de un tipo pero no para otro, incluso si podría esperarse también para el otro tipo, entonces eso se puede investigar más de cerca.
+
+\paragraph{5.} Búsqueda de patrones. Con este enfoque un patrón empírico es observado y compardo un patrón predicado. Cuando hay coincidencia, esto apoya a que el predicado sea verdadero. La búsqueda de patrones se puede basar en explicaciones rivales. Si tiene varios casos con el mismo resultado, es posible formular un conjunto de explicaciones rivales para este resultado. Entonces es posible investigar los casos y determinar cuál de las explicaciones que describen los casos de la mejor manera.
+
+\paragraph{5.1.} Construcción de una explicación. Los patrones sean identificados basados en una relación causa-efecto y se buscan explicaciones subyacentes. 
+
+\paragraph{5.2.} Estudio de casos similares. Este tipo de análisis puede ser conducido si se tienen otros casos de referencia. En este caso se puede utilizar el material recolectado en la Sección \ref{ch2:marco-teorico} para realizar comparaciones.
+
+
+\paragraph{7.} Validación de pares
+
+\paragraph{6.} Generar un reporte el que se de a conocer lo encontrado.
+ 
