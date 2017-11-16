@@ -53,6 +53,18 @@ Las metodologías de desarrollo ágil de software emergen al final de de la déc
 
 Las metodologías ágiles son adecuadas para proyectos con requerimientos altamente cambiantes, se motiva aceptar y responder ante los cambios. En 2001, los desarrolladores de varios de estas metodologías ágiles escribieron el Manifiesto Ágil \cite{agile-manifesto} (Apéndice \ref{apendice:a}). Los principios detrás del Manifiesto Ágil incluyen entrega rápida, frecuente consistente y continua de software funcional, respuesta a requerimientos cambiantes, comunicación efectiva y equipos motivados con capacidad de auto organizarse.
 
+\subsection{El Manifiesto Ágil}\label{apendice:a}
+
+\begin{center}
+\emph{Individuos e interacciones sobre procesos y herramientas
+Software funcionando sobre documentación extensiva
+Colaboración con el cliente sobre negociación contractual
+Respuesta ante el cambio sobre seguir un plan}
+\end{center}
+
+\emph{Esto es, aunque valoramos los elementos de la derecha,
+valoramos más los de la izquierda.}
+
 \subsection{Prácticas Ágiles de desarrollo de software} \label{sec:practicas-agiles-desarrollo}
 De acuerdo con \cite{ford}, a pesar de la gran cantidad de literatura disponible sobre metodologías ágiles de software, mucha de la misma menciona poco acerca de las prácticas agiles de desarrollo de software. La mayoría se centran principalmente en gestión, procesos y estimación, y no tanto en la parte relacionada con la ingeniería de software.
 
@@ -75,7 +87,33 @@ Para efectos de esta revisión, se definen un conjunto de prácticas. Esto porqu
         \item Diseño emergente
 \end{itemize}
 
-En el apéndice \ref{apendice:b} se proveen definiciones de estas prácticas.
+\paragraph{Pruebas unitarias} las pruebas unitarias se concentran en una clase o método. Se ejecutan enteramente en memoria lo que las hace muy rápidas\cite{shore-warden}.
+
+\paragraph{Desarrollo orientado a pruebas (TDD)} es un ciclo rápido de prueba, codificación y refactorización\cite{shore-warden}. La idea es qeu cuando se desarrolla una nueva pieza de funcionalidad o se arregla un error, los desarrolladores primero crean una prueba que actúa como una especificación ejecutable del comportamiento esperado del código que se va a escribir. Estas pruebas no solamente orientan el diseño de la aplicación sino que también sirven tanto como prueba de regresión y como documentación del código y del comportamiento esperado de la aplicación.\cite{humble}
+
+\paragraph{Desarrollo orientado al comportamiento (BDD)} toma la posición de que puede convertir una idea de un requisito en código implementado, probado y listo para la producción de manera simple y eficaz, siempre y cuando el requisito sea lo suficientemente específico para que todos los involucrados sepan lo que está pasando. BDD utiliza una historia como la unidad básica de funcionalidad, y por lo tanto de entrega. Los criterios de aceptación son una parte intrínseca de la historia.\cite{michael-b}. 
+
+\paragraph{Desarrollo orientado a pruebas de aceptación (ATDD)} es una forma avanzada de TDD en el cual los criterios de aceptación automatizados, definidos en colaboración con los usuarios, orientan y enfocan el proceso de desarrollo. Esto ayuda a asegurar que todo el mundo entienda qué características están en desarrollo.
+
+
+\paragraph{Integración continua}  la idea que hay detrás es que si la integración regular del códiga es algo bueno integrar, ¿por qué no hacerlo todo el tiempo? En el contexto de la integración ``todo el tiempo'' significa cada vez que alguien promueva cualquier cambio al sistema de control de versiones\cite{humble}. 
+
+\paragraph{Estándares de codificación} \emph{eXtreme Programming} recomienda la creacio4n de estándares y guías de codificación con las que los desarrolladores se puedan poner de acuerdo en adherise cuando programan\cite{shore-warden}. Esto incluye: hábitos de programación, ambientes de desarrollo integrados, herramientos, configuración de archivos, convenciones de construcción y diseño y manejo de errores.
+
+\paragraph{Puesta en producción continua} técnica que alienta a poner en producción cada cambio que haya pasado a través proceso de pruebas automatizadas. Aunque también se puede hacer entregar de forma continua software funcional en ambientes de pruebas o pre-producción, el punto crucial con esta técnica que entregar software funcional directamente en ambientes de producción\cite{humble}.
+
+\paragraph{Propiedad compartida del código} extiende la responsabilidad de mantenimiento del código a todos los programadores. Todos comparten la responsabilidad de la calidad del código. Ninguna persona reclama la propiedad de alguna parte del sistema y cualquiera puede hacer un cambio en cualquier lugar del código\cite{shore-warden}.
+
+\paragraph{Diseño emergente} \emph{eXtreme programming} hace demandas desafiantes a los programadores: cada semana deben finalizar de 4 a 10 historias de valor para los clientes. Cada semana, los clientes pueden revisar el plan actual e introducir nuevas historias. En otras palabras, como programador se tiene que estar en la capacidad de producir valor al cliente de forma constante. Afortunadamente, \emph{eXtreme programming} provee una solución a esto: diseño emergente e incremental, que permite a construir nueva infraestructura técnica incrementalmente, en pequeñas piezas, de acuerdo a como se entregan las historias\cite{shore-warden}.
+
+\paragraph{El código como infraestructura} es la práctica en donde técnicas, procesos y herramientas utilizadas en el desarrollo de software son utilizadas para administrar la entrega y configuración de aplicaciones. Una organización que carece de código como infraestructura puede sufrir de retrasos en la entrega, por lo general debido a que los cambios en la infraestructura crean diferencias entre los ambientes de desarrollo y lo que administran el personal de operaciones\cite{humble}.
+
+\paragraph{Administración de la configuración} se refiere al proceso mediante el cual todos los artefactos relevantes a un projecto y las relaciones entre ellos son almacenados, obtenidos, identificados de forma única y modificados. La estrategia de administracio4n de la configuración determinará cómo se gestionan todos los cambios que pasan dentro de un proyecto. Por lo tanto, se registra la evolución de los sistemas y aplicaciones\cite{humble}.
+
+\paragraph{Pruebas automatizadas} El reto detrás de las pruebas de software es que una tarea que es sumamente importane pero que a la vez puede llegar a consumir mucho tiempo. La respuesta a esto es aplicar un conjunto de pruebas automatizadas tales como pruebas unitarias, de integración, de carga y de aceptación las cuales se ejecutan automáticamente luego de que se efectúa algún cambio en la aplicación. Una prueba automatizada añade valor al encontrar defectos antes que el código sea utilizado por los usuarios finales\cite{humble}.
+
+\paragraph{Monitoreo del rendimiento} lo que se pretende es brindar visibilidad del estado actual de la aplicación. Esto se puede poner a disposición por medio de interfaces gráficas las cuales muestran métricas, alertas y bitácoras. Al analizar estos resultados se puede ir hasta una línea de código y determinar si existe un problema en la misma o en la infraestructura\cite{humble}.
+
 
 \subsection{DevOps}
 DevOps es la práctica que combina desarrollo y operaciones y que desde el 2009 viene siendo adoptada por muchas organizaciones de la industria \cite{bang-et-al}. Se puede resumir como una práctica que anima a establecer un ambiente en donde la construcción, pruebas y la entrega de software puede realizarse de forma rápida, frecuente y más confiable \cite{henrik-b}. DevOps apareció como una respuesta directa a los retos de las plataformas de software a gran escala que se actualizan rápidamente, tal y como lo indica Anderson \cite{anderson}: \emph{``El movimiento DevOps emergió a partir de uno de los clásicos obstáculos en muchas organizaciones. Los desarrolladores construyen código y aplicaciones, y las envían al personal de operaciones solo para descubrir que el código y las aplicaciones no corren en producción. Es el clásico problema de ``se ejecutaba en mi máquina y funcionaba, ahora es problema del personal de operaciones'' ''}. 
